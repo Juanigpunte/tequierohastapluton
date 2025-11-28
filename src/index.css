@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Fredoka', 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1464; /* fallback */
+  /* overflow-x: hidden; has been moved to the main app container for better control */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar for a better thematic fit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d1b4e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbbf24;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
