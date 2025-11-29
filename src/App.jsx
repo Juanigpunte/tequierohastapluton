@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { Sparkles, Rocket, PenTool, ArrowUp } from 'lucide-react';
+import { Sparkles, Rocket, PenTool, ArrowUp, HelpCircle  } from 'lucide-react';
 import Navbar from './components/layout/Navbar';
 function App() {
   const stars = Array.from({
@@ -27,7 +27,7 @@ function App() {
         <meta name="description" content="Descubre 'Te quiero hasta Plutón', un libro mágico para niños sobre el amor infinito y los sueños espaciales. Por Valentina Punte." />
       </Helmet>
       
-      <div className="relative overflow-x-hidden bg-gradient-to-br from-[#1a1464] via-[#4a2b7c] to-[#2d1b4e]">
+      <div className="relative overflow-x-hidden bg-gradient-to-br from-[#1a1464] via-[#332b7c] to-[#1d1b4e]">
         {/* Animated stars background */}
         <div className="absolute inset-0 z-0">
           {stars.map(star => <motion.div key={star.id} className="absolute rounded-full bg-yellow-300" style={{
@@ -63,7 +63,7 @@ function App() {
               }} animate={{
                 opacity: 1,
                 x: 0
-              }} transition={{
+              }} transition={{  
                 duration: 0.8,
                 delay: 0.3
               }} className="flex flex-col items-center gap-8">
@@ -217,6 +217,60 @@ function App() {
                 <p className="text-lg text-indigo-200 leading-relaxed">Es un libro infantil que trata sobre un niño llamado Teo que teme dormir solo, pero su imaginación lo lleva a un viaje a Plutón. Es una historia sobre cómo los sueños pueden transformar el miedo y lo cotidiano.</p>
               </motion.div>
             </div>
+          </section>
+
+          {/* La Historia Section */}
+          <section id="historia" className="py-20 px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <motion.h2 initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.6
+            }} className="text-4xl md:text-5xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-amber-400">
+                
+              </motion.h2>
+              <motion.div initial={{
+              opacity: 0,
+              scale: 0.9
+            }} animate={{
+              opacity: 1,
+              scale: 1
+            }} transition={{
+              duration: 0.8,
+              delay: 0.2
+            }} className="relative bg-white/5 backdrop-blur-sm border border-yellow-300/20 rounded-2xl p-8 md:p-12 shadow-2xl">
+                <div className="absolute -top-6 -left-6 text-yellow-300/50">
+                <Rocket size={64} />
+                </div>
+                <div className="absolute -bottom-8 -right-8 text-yellow-300/50">
+                   <motion.div animate={{
+                     rotate: -45,
+                     x: [0, 10, 0]
+                    }} transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      repeatType: "mirror"
+                    }}>
+                  <Sparkles size={48} />
+                  </motion.div>
+                </div>
+                <HelpCircle className="mx-auto mb-6 text-yellow-300" size={40} />
+                <h3 className="text-2xl font-semibold text-white mb-4">Shh!</h3>
+                <p className="text-lg text-indigo-200 leading-relaxed">Proximamente...</p>
+              </motion.div>
+            </div>
+          </section>
+
+          <section id="imagenes" className="py-20">
+             <div className="flex flex-wrap justify-center gap-8 flex-row">
+                <img src="/src/img/valenlibro.jpeg" className="relative z-10 rounded-2xl shadow-2xl max-w-md w-full transform hover:scale-105 transition-transform duration-300" alt="" />
+                <img src="/src/img/libro.jpeg" className="relative z-10 rounded-2xl shadow-2xl max-w-md w-full transform hover:scale-105 transition-transform duration-300" alt="" />
+                <img src="/src/img/canoppus.jpeg" className="relative z-10 rounded-2xl shadow-2xl max-w-md w-full transform hover:scale-105 transition-transform duration-300" alt="" />
+             </div>
           </section>
           
           {/* Placeholder for Comprar Section */}
