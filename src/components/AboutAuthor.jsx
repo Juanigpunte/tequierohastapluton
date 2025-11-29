@@ -1,24 +1,40 @@
+import React from "react";
+
 export default function AboutAuthor() {
   return (
-    <section className="py-24 px-6 max-w-5xl mx-auto">
-      <h2 className="text-4xl text-white font-bold text-center mb-10">
+    <section
+      id="biografia"
+      className="py-24 px-6 text-white flex flex-col items-center"
+    >
+      <h2 className="text-4xl font-bold mb-12 text-center">
         Sobre la autora
       </h2>
 
-      <div className="bg-white/10 border border-white/20 backdrop-blur-sm rounded-3xl p-10 shadow-lg">
-        <div className="flex flex-col md:flex-row items-center gap-10">
-          
+      <div className="flex flex-col md:flex-row items-center gap-10 max-w-4xl w-full">
+        
+        {/* FOTO */}
+        <div className="flex-shrink-0">
           <img
-            src="/img/autora.jpg" // reemplazar
+            src="/autor.jpg"   // ⚠️ Cambiá esto por tu imagen real
             alt="Autora"
-            className="w-40 h-40 rounded-full shadow-xl object-cover"
+            className="w-48 h-48 object-cover rounded-full shadow-lg border-4 border-white/30"
           />
+        </div>
 
-          <p className="text-white/90 text-lg leading-relaxed">
-            Texto de ejemplo de la biografía. Podés editarlo después en 
-            <b>AboutAuthor.jsx</b>.
+        {/* BIO */}
+        <div className="text-center md:text-left space-y-4">
+          <p className="text-lg opacity-90">
+            Aquí irá la biografía real de la autora. Podés contar su trayectoria,
+            inspiración, cómo nació el universo de “Te quiero hasta Plutón”, y el
+            mundo de sueños que desarrolla en sus libros.
+          </p>
+
+          <p className="text-lg opacity-90">
+            También podés agregar premios, proyectos futuros o una frase personal
+            que encaje con la estética infantil y espacial.
           </p>
         </div>
+
       </div>
     </section>
   );

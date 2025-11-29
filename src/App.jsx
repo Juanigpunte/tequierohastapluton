@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { Sparkles, Rocket, PenTool, ArrowUp, HelpCircle  } from 'lucide-react';
 import Navbar from './components/layout/Navbar';
 import Footer from "./components/Footer";
+import AboutAuthor from "./components/AboutAuthor";
+
 
 function App() {
   const stars = Array.from({
@@ -33,7 +35,7 @@ function App() {
 
 
         {/* Animated stars background */}
-        <div className="absolute inset-0 z-0">
+        <div className="fixed inset-0 z-0 pointer-events-none">
           {stars.map(star => <motion.div key={star.id} className="absolute rounded-full bg-yellow-300" style={{
           left: `${star.x}%`,
           top: `${star.y}%`,
@@ -286,6 +288,7 @@ function App() {
           </section>
 
           {/* Footer */}
+          <AboutAuthor />
           <Footer />
         </main>
 

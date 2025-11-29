@@ -18,8 +18,8 @@ export default function Footer() {
       className="text-center py-12 px-4 bg-indigo-950/70 backdrop-blur-sm text-white border-t border-yellow-300/20"
     >
       <div className="flex flex-col items-center gap-4 max-w-4xl mx-auto">
-        <span className="text-yellow-300 text-sm uppercase tracking-wider">Autora</span>
-        <span className="text-3xl md:text-4xl font-bold text-white">Valentina Punte</span>
+        <span className="text-yellow-300 text-sm uppercase tracking-wider">¡Gracias por visitarnos!</span>
+        <span className="text-3xl md:text-4xl font-bold text-white">¡Te quiero hasta plutón!</span>
 
         <div className="flex gap-2 mt-2">
           <motion.div
