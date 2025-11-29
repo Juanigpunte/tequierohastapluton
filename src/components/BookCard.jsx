@@ -1,45 +1,28 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { motion } from "framer-motion";
 
-export default function BookCard({ book }) {
+export default function BookCard({ book, onClick }) {
   return (
-    <div className="
-      bg-white/10 
-      border border-white/20 
-      backdrop-blur-sm 
-      p-4 
-      rounded-2xl 
-      shadow-lg
-      hover:scale-[1.03]
-      transition-all 
-      duration-300
-    ">
-      <img
-        src={book.cover}
-        alt={book.title}
-        className="rounded-xl w-full h-52 object-cover shadow-md mb-4"
-      />
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      className="bg-white/10 backdrop-blur-md border border-yellow-300/20 rounded-2xl shadow-xl p-4 cursor-pointer max-w-xs mx-auto"
+      onClick={onClick}
+    >
+      <div className="overflow-hidden rounded-xl">
+        <img
+          src={book.cover}
+          alt={book.title}
+          className="w-full h-56 object-cover"
+        />
+      </div>
 
-      <h3 className="text-white text-xl font-semibold mb-3 text-center">
+      <h3 className="text-xl font-bold text-yellow-300 text-center mt-4">
         {book.title}
       </h3>
 
-      <Link
-        to={`/libros/${book.id}`}
-        className="
-          block 
-          text-center 
-          bg-gradient-to-r from-blue-500 to-purple-600 
-          text-white 
-          py-2 
-          rounded-xl 
-          font-medium
-          shadow-md
-          hover:opacity-90
-          transition
-        "
-      >
-        Ver más
-      </Link>
-    </div>
+      <p className="text-indigo-200 text-sm text-center mt-2">
+        {book.shortDescription}
+      </p>
+    </motion.div>
   );
 }

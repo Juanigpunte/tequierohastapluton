@@ -6,8 +6,8 @@ export default function AboutAuthor() {
       id="biografia"
       className="py-24 px-6 text-white flex flex-col items-center"
     >
-      <h2 className="text-4xl font-bold mb-12 text-center">
-        Sobre la autora
+      <h2 className="text-4xl md:text-5xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-amber-400">
+        Sobre Mi 💫
       </h2>
 
       <div className="flex flex-col md:flex-row items-center gap-10 max-w-4xl w-full">
@@ -15,7 +15,7 @@ export default function AboutAuthor() {
         {/* FOTO */}
         <div className="flex-shrink-0">
           <img
-            src="/autor.jpg"   // ⚠️ Cambiá esto por tu imagen real
+            src="/autor.jpg"   
             alt="Autora"
             className="w-48 h-48 object-cover rounded-full shadow-lg border-4 border-white/30"
           />

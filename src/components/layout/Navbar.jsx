@@ -3,9 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, Menu, X } from 'lucide-react';
 
 const navItems = [
-  { name: 'Inicio', href: '#inicio' },
+  { name: 'Inicio', href: '/' },
   { name: 'La Historia', href: '#historia' },
-  // Removed "Comprar" link as per user request
 ];
 
 const Navbar = () => {
@@ -33,7 +32,7 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <a href="#inicio" className="flex items-center gap-2 text-white font-bold text-xl">
+            <a href="/" className="flex items-center gap-2 text-white font-bold text-xl">
               <Sparkles className="text-yellow-300" />
               <span>Te quiero hasta Plutón</span>
             </a>

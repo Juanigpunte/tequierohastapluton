@@ -1,10 +1,11 @@
+
 export const books = [
   {
-    id: "te-quiero-hasta-pluton",
-    title: "Te quiero hasta Plutón",
-    cover: "/img/libros/pluton-portada.jpg", // reemplazalo
+    id: "los-monos-de-aurora",
+    title: "???",
+    cover: "/prox.png",
     description:
-      "Descripción del libro. Podés editar esto desde /src/data/books.js",
+      "Proximamente...",
     gallery: [
       "/img/libros/pluton-1.jpg",
       "/img/libros/pluton-2.jpg",
@@ -13,9 +14,21 @@ export const books = [
   {
     id: "los-suenos-de-teo",
     title: "Los sueños de Teo",
-    cover: "/img/libros/teo-portada.jpg",
+    cover: "/lossueñosdeteo.jpeg",
     description:
-      "Otro texto de ejemplo para el libro Los Sueños de Teo.",
+      "La historia de Teo que teme dormir solo, pero su imaginación lo lleva a un viaje a Plutón.",
+    gallery: [
+      "/canopusdibujo.jpeg",
+      "/lossueñosdeteo.jpeg",
+      "/libros.jpeg",
+    ],
+  },
+    {
+    id: "julepe",
+    title: "???",
+    cover: "/prox.png",
+    description:
+      "Proximamente...",
     gallery: [
       "/img/libros/teo-1.jpg",
       "/img/libros/teo-2.jpg",
