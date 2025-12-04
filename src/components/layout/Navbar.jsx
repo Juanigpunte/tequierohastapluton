@@ -4,7 +4,7 @@ import { Sparkles, Menu, X } from 'lucide-react';
 
 const navItems = [
   { name: 'Inicio', href: '/' },
-  { name: 'La Historia', href: '#historia' },
+  { name: 'Los sueños de Teo', href: '/book/los-suenos-de-teo' },
 ];
 
 const Navbar = () => {

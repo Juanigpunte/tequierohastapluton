@@ -6,14 +6,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevents horizontal scroll on mobile */
 }
 
 body {
-  font-family: 'Fredoka', 'DM Sans', sans-serif;
+  font-family: 'Passion One', 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1a1464; /* fallback */
-  /* overflow-x: hidden; has been moved to the main app container for better control */
+  overflow-x: hidden; /* Prevents horizontal scroll on mobile */
 }
 
 * {

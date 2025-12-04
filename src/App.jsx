@@ -27,7 +27,7 @@ function App() {
         />
       </Helmet>
 
-      <div className="min-h-screen relative bg-[radial-gradient(circle_at_20%_30%,rgba(65,105,225,0.15),transparent_60%),radial-gradient(circle_at_80%_70%,rgba(0,150,255,0.12),transparent_70%),radial-gradient(circle_at_30%_20%,#1e2a5a_0%,#0e1635_40%,#040717_100%)]">
+      <div className="min-h-screen relative overflow-hidden bg-[radial-gradient(circle_at_20%_30%,rgba(65,105,225,0.15),transparent_60%),radial-gradient(circle_at_80%_70%,rgba(0,150,255,0.12),transparent_70%),radial-gradient(circle_at_30%_20%,#1e2a5a_0%,#0e1635_40%,#040717_100%)]">
 
         {/* Fondo de estrellas */}
         <div className="fixed inset-0 z-0 pointer-events-none">
@@ -64,7 +64,7 @@ function App() {
                     <img src="/canopusdibujo.jpeg" alt="Portada del libro Te quiero hasta Plutón mostrando un niño mirando al espacio" className="relative z-10 rounded-2xl shadow-2xl max-w-md w-full transform hover:scale-105 transition-transform duration-300" />
                   </div>
                   <motion.div animate={{ y: [0, -10, 0] }} transition={{ duration: 4, repeat: Infinity, repeatType: "reverse" }} className="flex items-center gap-4">
-                    <img alt="Niño mirando las estrellas con asombro" className="w-24 h-24 rounded-full border-4 border-yellow-300 shadow-lg object-cover" src="https://images.unsplash.com/photo-1497676127630-9c3b0e392740" />
+                    <img alt="Canopus dibujo" className="w-24 h-24 rounded-full border-4 border-yellow-300 shadow-lg object-cover" src="/canopusdibujo.jpeg" />
                     <div className="flex gap-1">
                       {[...Array(3)].map((_, i) => (
                         <motion.div key={i} animate={{ scale: [1, 1.3, 1], opacity: [0.5, 1, 0.5] }} transition={{ duration: 1.5, delay: i * 0.3, repeat: Infinity }} className="w-2 h-2 bg-yellow-300 rounded-full" />

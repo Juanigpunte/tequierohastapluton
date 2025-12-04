@@ -45,7 +45,7 @@ export default function BooksSection() {
 
               {/* Descripción corta */}
               <p className="text-indigo-200 text-sm leading-relaxed">
-                {book.description.substring(0, 90)}...
+                {book.description.substring(0, 90)}
               </p>
             </Link>
           ))}

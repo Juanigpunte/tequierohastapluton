@@ -7,7 +7,7 @@ export default function AboutAuthor() {
       className="py-24 px-6 text-white flex flex-col items-center"
     >
       <h2 className="text-4xl md:text-5xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-amber-400">
-        Sobre Mi 💫
+        Sobre Mi
       </h2>
 
       <div className="flex flex-col md:flex-row items-center gap-10 max-w-4xl w-full">
